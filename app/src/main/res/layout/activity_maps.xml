@@ -1,0 +1,111 @@
+
+
+    <fragment
+
+
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map" tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        map:cameraTargetLat="30.284918"
+        map:cameraTargetLng="-97.734057"
+        map:cameraZoom="15"
+        map:uiZoomControls="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="  ADDRESS: "
+                    android:textSize="10pt">
+
+             </TextView>
+
+            <EditText
+                android:id="@+id/mylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="16"
+                >
+            </EditText>
+
+
+             <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" GO! "
+                    android:onClick="runLocation">
+             </Button>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="140px"
+
+            android:text=" Satellite "
+            android:onClick="satellite">
+        </Button>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="210px"
+
+            android:text=" Hybrid   "
+            android:onClick="hybrid">
+        </Button>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="280px"
+
+            android:text=" Terrain   "
+            android:onClick="terrain">
+        </Button>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="350px"
+
+            android:text=" Normal   "
+            android:onClick="normal">
+        </Button>
+
+
+
+
+
+
+
+
+
+    </fragment>
+
+
+
+
+
+
